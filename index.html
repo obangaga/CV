@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CVIO Modern Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    :root {
+      --dark-bg: #0e0e0e;
+      --light-bg: #f8f9fa;
+      --primary: #10b981; /* hijau */
+      --secondary: #4f46e5;
+      --accent: #ec4899;
+      --text-dark: #e5e7eb;
+      --text-light: #1f2937;
+      --card-dark: #1a1a1a;
+      --card-light: #ffffff;
+      --transition: all 0.3s ease;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      --radius: 16px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--dark-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header, section, footer {
+      text-align: center;
+    }
+
+    h1, h2, h3 {
+      color: var(--primary);
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: var(--primary);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .btn:hover {
+      background: #0f766e;
+    }
+
+    img.profile {
+      max-width: 200px;
+      border-radius: 50%;
+      margin: 2rem auto;
+      display: block;
+      box-shadow: var(--shadow);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Hi, I'm <span style="color: var(--primary);">Your Name</span></h1>
+      <p>I'm a web developer specializing in creating modern and responsive web applications.</p>
+      <a href="#contact" class="btn">Contact Me</a>
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="Profile" class="profile" />
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I love building things for the web. Whether it's a landing page or a complex web app, I enjoy the process of turning ideas into reality using code.</p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>Here are some of my projects. Each one is built with care and attention to detail.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to work together, feel free to reach out to me via the form below or through my social media.</p>
+      <a href="mailto:you@example.com" class="btn">Send Email</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
