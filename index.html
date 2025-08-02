@@ -8,19 +8,20 @@
   <style>
     /* VARIABEL & RESET */
     :root {
-      --dark-bg: #0e0e0e;
-      --light-bg: #f8f9fa;
-      --primary: #ff007f;
-      --secondary: #00ffff;
-      --accent: #fcee09;
-      --text-dark: #e5e7eb;
-      --text-light: #1f2937;
-      --card-dark: #1a1a1a;
-      --card-light: #ffffff;
-      --transition: all 0.3s ease;
-      --shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      --radius: 16px;
-    }
+  --dark-bg: #0e0e0e;
+  --light-bg: #111118;
+  --primary: #00ffff;   /* Neon blue */
+  --secondary: #ff007f; /* Neon pink */
+  --accent: #ff00ff;    /* Extra neon pink/magenta */
+  --text-dark: #e5e7eb;
+  --text-light: #1f2937;
+  --card-dark: #1a1a1a;
+  --card-light: #ffffff;
+  --transition: all 0.3s ease;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  --radius: 16px;
+}
+
 
     * { 
       margin: 0; 
@@ -59,13 +60,16 @@
     }
 
     .logo {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--primary);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-shadow: 0 0 5px var(--primary),
+               0 0 10px var(--primary),
+               0 0 20px var(--accent);
     }
 
     .logo i {
@@ -209,11 +213,14 @@
     }
 
     .btn:hover {
-      background: transparent;
-      color: var(--primary);
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
+  background: transparent;
+  color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px var(--primary),
+              0 0 20px var(--primary),
+              0 0 40px var(--accent);
+}
+
 
     .btn-outline {
       background: transparent;
@@ -242,16 +249,19 @@
     }
 
     .profile-img::before {
-      content: '';
-      position: absolute;
-      top: -20px;
-      right: -20px;
-      width: 100%;
-      height: 100%;
-      border: 3px solid var(--primary);
-      border-radius: var(--radius);
-      z-index: -1;
-    }
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--primary);
+  border-radius: var(--radius);
+  z-index: -1;
+  box-shadow: 0 0 15px var(--primary),
+              0 0 30px var(--accent),
+              0 0 60px var(--accent);
+}
 
     .profile-img img {
       width: 100%;
