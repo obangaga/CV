@@ -10,9 +10,9 @@
     :root {
   --dark-bg: #0e0e0e;
   --light-bg: #111118;
-  --primary: #00ffff;   /* Neon blue */
-  --secondary: #ff007f; /* Neon pink */
-  --accent: #ff00ff;    /* Extra neon pink/magenta */
+  --primary: #10b981;   
+  --secondary: #10b981;
+  --accent: #ff00ff;   
   --text-dark: #e5e7eb;
   --text-light: #1f2937;
   --card-dark: #1a1a1a;
@@ -67,10 +67,8 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  text-shadow: 0 0 5px var(--primary),
-               0 0 10px var(--primary),
-               0 0 20px var(--accent);
-    }
+}
+
 
     .logo i {
       font-size: 1.5rem;
@@ -216,10 +214,9 @@
   background: transparent;
   color: var(--primary);
   transform: translateY(-3px);
-  box-shadow: 0 0 10px var(--primary),
-              0 0 20px var(--primary),
-              0 0 40px var(--accent);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
+
 
 
     .btn-outline {
@@ -248,7 +245,7 @@
       box-shadow: var(--shadow);
     }
 
-    .profile-img::before {
+.profile-img::before {
   content: '';
   position: absolute;
   top: -20px;
@@ -258,10 +255,8 @@
   border: 3px solid var(--primary);
   border-radius: var(--radius);
   z-index: -1;
-  box-shadow: 0 0 15px var(--primary),
-              0 0 30px var(--accent),
-              0 0 60px var(--accent);
 }
+
 
     .profile-img img {
       width: 100%;
